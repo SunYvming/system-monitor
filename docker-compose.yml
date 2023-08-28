@@ -74,8 +74,6 @@ services:
       - 3000:3000
     volumes:
       - ./grafana:/var/lib/grafana
-    # environment:
-    #   - GF_INSTALL_PLUGINS=marcusolsson-treemap-panel
     networks:
       - monitor
     depends_on:
